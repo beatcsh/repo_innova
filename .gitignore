@@ -1,0 +1,6 @@
+/server/node_modules
+/server/.env
+/innova_app/node_modules
+/innova_app/.env
+/innova_ionic/node_modules
+/innova_ionic/.env
