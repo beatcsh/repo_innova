@@ -1,10 +1,14 @@
 module.exports = {
-    content: [
+  content: [
       "./src/**/*.{html,js,jsx,ts,tsx}",
-    ],
-    theme: {
-      extend: {},
-    },
-    plugins: [],
-  };
-  
+  ],
+  theme: {
+      extend: {
+          colors: { 
+              morado: '#961efe',
+              moradoele: '#4f129d'
+          }
+      },
+  },
+  plugins: [],
+};
