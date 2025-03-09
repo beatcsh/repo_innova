@@ -1,5 +1,3 @@
-import './Home.css';
-
 const Register: React.FC = () => {
     return (
         <>

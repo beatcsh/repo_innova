@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import PersonalInformation from './pages/PersonalInformation';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import FrequentActions from './pages/FrequentActions';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -35,6 +36,7 @@ import '@ionic/react/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import Historial from './pages/Historial';
 
 setupIonicReact();
 
@@ -44,6 +46,12 @@ const App: React.FC = () => (
       <IonRouterOutlet>
         <Route exact path="/home">
           <Home />
+        </Route>
+        <Route exact path="/frequent">
+          <FrequentActions />
+        </Route>
+        <Route exact path="/historial">
+          <Historial />
         </Route>
         <Route exact path="/per-info">
           <PersonalInformation />
@@ -55,8 +63,7 @@ const App: React.FC = () => (
           <Register />
         </Route>
         <Route exact path="/">
-          <p>nose</p>
-          {/* <Redirect to="/home" /> */}
+          <Redirect to="/home" />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>
