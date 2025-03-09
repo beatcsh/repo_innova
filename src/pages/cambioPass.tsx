@@ -1,4 +1,4 @@
-import { IonContent, IonItem, IonLabel, IonPage } from "@ionic/react";
+import { IonContent, IonItem, IonLabel, IonPage, IonRouterLink } from "@ionic/react";
 import React, { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
 import { ChevronLeft } from "lucide-react";
@@ -13,11 +13,10 @@ const ChangesPass: React.FC = () => {
 
     return (
         <IonPage>
-            <div className='p-2'>
-                <button>
+            <IonRouterLink href='InfoPersonal' className='p-2' >
                     <ChevronLeft size={35} />
-                </button>
-            </div>
+            </IonRouterLink>
+
             <IonContent className="bg-white flex items-center justify-center min-h-screen">
                 <div className="flex flex-col items-center justify-center">
                     <div className="avatar mt-12 mb-4">
