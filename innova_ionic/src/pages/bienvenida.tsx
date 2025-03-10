@@ -30,7 +30,7 @@ const Bienvenida: React.FC = () => {
                             Gestiona tu dinero con precisión y predice tu solvencia financiera.
                         </p>
 
-                        <button className="bg-purple-800 w-50 h-10 m-12 p-4 flex justify-center items-center !rounded-3xl hover:bg-purple-300 transition">
+                        <button className="duration-300 bg-purple-800 w-50 h-10 m-12 p-4 flex justify-center items-center !rounded-3xl hover:bg-purple-300 transition-all">
                             Empezar
                         </button>
                     </div>
