@@ -6,6 +6,9 @@ import PersonalInformation from './pages/PersonalInformation';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import FrequentActions from './pages/FrequentActions';
+import Bienvenida from './pages/bienvenida'; // Ajusta la ruta según la ubicación del archivo
+import InfoPersonal from './pages/informacionPersonal';
+import ChangesPass from './pages/cambioPass';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -61,6 +64,15 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/register">
           <Register />
+        </Route>
+        <Route exact path="/Bienvenida">
+          <Bienvenida />
+        </Route>
+        <Route exact path="/InfoPersonal">
+          <InfoPersonal />
+        </Route>
+        <Route exact path="/ChangesPass">
+          <ChangesPass />
         </Route>
         <Route exact path="/">
           <Redirect to="/home" />
