@@ -9,6 +9,7 @@ import FrequentActions from './pages/FrequentActions';
 import Bienvenida from './pages/bienvenida'; // Ajusta la ruta según la ubicación del archivo
 import InfoPersonal from './pages/informacionPersonal';
 import ChangesPass from './pages/cambioPass';
+import GastosIngresos from './pages/gastosIngresos';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -55,6 +56,9 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/historial">
           <Historial />
+        </Route>
+        <Route exact path="/gastosIngresos">
+        <GastosIngresos />
         </Route>
         <Route exact path="/per-info">
           <PersonalInformation />
