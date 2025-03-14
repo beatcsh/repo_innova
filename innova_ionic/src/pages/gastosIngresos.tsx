@@ -54,7 +54,7 @@ const GastosIngresos: React.FC = () => {
             { name: "Inversiones", value: 200 },
         ],
     };
-
+ //montse
     // Simula obtener los datos según el tipo
     const fetchData = async () => {
         setData(staticData[selected]);
