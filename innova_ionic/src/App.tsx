@@ -10,7 +10,7 @@ import Bienvenida from './pages/bienvenida'; // Ajusta la ruta según la ubicaci
 import InfoPersonal from './pages/informacionPersonal';
 import ChangesPass from './pages/cambioPass';
 import GastosIngresos from './pages/gastosIngresos';
-
+import ElegibilidadCredito from './pages/elegibilidadDeCredito'
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -53,6 +53,9 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/frequent">
           <FrequentActions />
+        </Route>
+        <Route exact path="/ElegibilidadCredito">
+        <ElegibilidadCredito />
         </Route>
         <Route exact path="/historial">
           <Historial />
