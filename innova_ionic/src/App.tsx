@@ -12,6 +12,7 @@ import ChangesPass from './pages/cambioPass';
 import GastosIngresos from './pages/gastosIngresos';
 import ElegibilidadCredito from './pages/elegibilidadDeCredito'
 import PrediccionesInversiones from './pages/prediccionesInversiones';
+import AnalisisInteligente from './pages/analisisInteligente';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -61,6 +62,9 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/historial">
           <Historial />
+        </Route>
+        <Route exact path="/AnalisisInteligente">
+          <AnalisisInteligente />
         </Route>
         <Route exact path="/gastosIngresos">
         <GastosIngresos />
